@@ -1,0 +1,1192 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Apr 10 16:22:13 2018
+# Process ID: 54709
+# Current directory: /h/bholen01/EE26/project_1/project_1.runs/synth_1
+# Command line: vivado -log fft_wrapper.vds -mode batch -messageDb vivado.pb -notrace -source fft_wrapper.tcl
+# Log file: /h/bholen01/EE26/project_1/project_1.runs/synth_1/fft_wrapper.vds
+# Journal file: /h/bholen01/EE26/project_1/project_1.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source fft_wrapper.tcl -notrace
+Command: synth_design -top fft_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-1223] The version limit for your license is '2016.11' and will expire in -496 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1152.504 ; gain = 212.121 ; free physical = 31847 ; free virtual = 183175
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'fft_wrapper' [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/fft_wrapper.vhd:39]
+INFO: [Synth 8-637] synthesizing blackbox instance 'prom1' of component 'dist_mem_gen_0' [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/fft_wrapper.vhd:62]
+INFO: [Synth 8-3491] module 'fft_8point_3stage' declared at '/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/fft_8point_3stage.vhd:34' bound to instance 'FFT' of component 'fft_8point_3stage' [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/fft_wrapper.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'fft_8point_3stage' [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/fft_8point_3stage.vhd:41]
+	Parameter k bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'butterfly_unit' declared at '/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/butterfly_unit.vhd:35' bound to instance 'BU_stage1_0' of component 'butterfly_unit' [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/fft_8point_3stage.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'butterfly_unit' [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/butterfly_unit.vhd:44]
+	Parameter k bound to: 0 - type: integer 
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Common 17-14] Message 'Synth 8-151' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Common 17-14] Message 'Synth 8-226' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+INFO: [Synth 8-256] done synthesizing module 'butterfly_unit' (1#1) [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/butterfly_unit.vhd:44]
+	Parameter k bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'butterfly_unit' declared at '/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/butterfly_unit.vhd:35' bound to instance 'BU_stage1_1' of component 'butterfly_unit' [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/fft_8point_3stage.vhd:71]
+	Parameter k bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'butterfly_unit' declared at '/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/butterfly_unit.vhd:35' bound to instance 'BU_stage1_2' of component 'butterfly_unit' [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/fft_8point_3stage.vhd:72]
+	Parameter k bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'butterfly_unit' declared at '/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/butterfly_unit.vhd:35' bound to instance 'BU_stage1_3' of component 'butterfly_unit' [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/fft_8point_3stage.vhd:73]
+	Parameter k bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'butterfly_unit' declared at '/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/butterfly_unit.vhd:35' bound to instance 'BU_stage2_0' of component 'butterfly_unit' [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/fft_8point_3stage.vhd:75]
+	Parameter k bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'butterfly_unit' declared at '/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/butterfly_unit.vhd:35' bound to instance 'BU_stage2_1' of component 'butterfly_unit' [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/fft_8point_3stage.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'butterfly_unit__parameterized5' [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/butterfly_unit.vhd:44]
+	Parameter k bound to: 2 - type: integer 
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+INFO: [Synth 8-256] done synthesizing module 'butterfly_unit__parameterized5' (1#1) [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/butterfly_unit.vhd:44]
+	Parameter k bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'butterfly_unit' declared at '/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/butterfly_unit.vhd:35' bound to instance 'BU_stage2_2' of component 'butterfly_unit' [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/fft_8point_3stage.vhd:77]
+	Parameter k bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'butterfly_unit' declared at '/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/butterfly_unit.vhd:35' bound to instance 'BU_stage2_3' of component 'butterfly_unit' [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/fft_8point_3stage.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'butterfly_unit__parameterized8' [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/butterfly_unit.vhd:44]
+	Parameter k bound to: 2 - type: integer 
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+INFO: [Synth 8-256] done synthesizing module 'butterfly_unit__parameterized8' (1#1) [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/butterfly_unit.vhd:44]
+	Parameter k bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'butterfly_unit' declared at '/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/butterfly_unit.vhd:35' bound to instance 'BU_stage3_0' of component 'butterfly_unit' [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/fft_8point_3stage.vhd:80]
+	Parameter k bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'butterfly_unit' declared at '/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/butterfly_unit.vhd:35' bound to instance 'BU_stage3_1' of component 'butterfly_unit' [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/fft_8point_3stage.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'butterfly_unit__parameterized11' [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/butterfly_unit.vhd:44]
+	Parameter k bound to: 1 - type: integer 
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1252]
+INFO: [Common 17-14] Message 'Synth 8-312' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'butterfly_unit__parameterized11' (1#1) [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/butterfly_unit.vhd:44]
+	Parameter k bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'butterfly_unit' declared at '/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/butterfly_unit.vhd:35' bound to instance 'BU_stage3_2' of component 'butterfly_unit' [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/fft_8point_3stage.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'butterfly_unit__parameterized13' [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/butterfly_unit.vhd:44]
+	Parameter k bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'butterfly_unit__parameterized13' (1#1) [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/butterfly_unit.vhd:44]
+	Parameter k bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'butterfly_unit' declared at '/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/butterfly_unit.vhd:35' bound to instance 'BU_stage3_3' of component 'butterfly_unit' [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/fft_8point_3stage.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'butterfly_unit__parameterized15' [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/butterfly_unit.vhd:44]
+	Parameter k bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'butterfly_unit__parameterized15' (1#1) [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/butterfly_unit.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'fft_8point_3stage' (2#1) [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/fft_8point_3stage.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'fft_wrapper' (3#1) [/h/bholen01/EE26/project_1/project_1.srcs/sources_1/new/fft_wrapper.vhd:39]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:10:14 ; elapsed = 00:10:23 . Memory (MB): peak = 1969.668 ; gain = 1029.285 ; free physical = 30784 ; free virtual = 182125
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:10:29 ; elapsed = 00:10:40 . Memory (MB): peak = 1969.668 ; gain = 1029.285 ; free physical = 30784 ; free virtual = 182125
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/h/bholen01/EE26/project_1/project_1.srcs/constrs_1/new/pinout.xdc]
+Finished Parsing XDC File [/h/bholen01/EE26/project_1/project_1.srcs/constrs_1/new/pinout.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/h/bholen01/EE26/project_1/project_1.srcs/constrs_1/new/pinout.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fft_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fft_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2328.105 ; gain = 0.000 ; free physical = 30523 ; free virtual = 181895
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6980 
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:11:29 ; elapsed = 00:11:37 . Memory (MB): peak = 2328.105 ; gain = 1387.723 ; free physical = 30522 ; free virtual = 181893
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:11:29 ; elapsed = 00:11:37 . Memory (MB): peak = 2328.105 ; gain = 1387.723 ; free physical = 30522 ; free virtual = 181894
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:11:29 ; elapsed = 00:11:37 . Memory (MB): peak = 2328.105 ; gain = 1387.723 ; free physical = 30517 ; free virtual = 181889
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/h/bholen01/EE26/project_1/project_1.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:13:06 ; elapsed = 00:13:17 . Memory (MB): peak = 2328.105 ; gain = 1387.723 ; free physical = 30459 ; free virtual = 181832
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------------------+------------+----------+
+|      |RTL Partition                        |Replication |Instances |
++------+-------------------------------------+------------+----------+
+|1     |butterfly_unit__GBM0                 |           1|     36376|
+|2     |butterfly_unit__GBM1                 |           1|     28783|
+|3     |butterfly_unit__parameterized5__GB0  |           1|     36310|
+|4     |butterfly_unit__parameterized5__GB1  |           1|     28853|
+|5     |butterfly_unit__parameterized8__GB0  |           1|     36310|
+|6     |butterfly_unit__parameterized8__GB1  |           1|     28853|
+|7     |butterfly_unit__parameterized11__GB0 |           1|     41204|
+|8     |butterfly_unit__parameterized11__GB1 |           1|      7168|
+|9     |butterfly_unit__parameterized11__GB2 |           1|      6156|
+|10    |butterfly_unit__parameterized11__GB3 |           1|     11369|
+|11    |butterfly_unit__parameterized13__GB0 |           1|     36310|
+|12    |butterfly_unit__parameterized13__GB1 |           1|     28853|
+|13    |butterfly_unit__parameterized15__GB0 |           1|     39957|
+|14    |butterfly_unit__parameterized15__GB1 |           1|      9198|
+|15    |butterfly_unit__parameterized15__GB2 |           1|      6695|
+|16    |butterfly_unit__parameterized15__GB3 |           1|     11461|
+|17    |fft_wrapper__GC0                     |           1|      1379|
++------+-------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 120   
+	   3 Input     28 Bit       Adders := 96    
+	   2 Input     23 Bit       Adders := 240   
+	   2 Input     10 Bit       Adders := 120   
+	   2 Input      8 Bit       Adders := 240   
+	   2 Input      6 Bit       Adders := 120   
++---XORs : 
+	   2 Input      1 Bit         XORs := 11    
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4354  
+	   2 Input     31 Bit        Muxes := 360   
+	   2 Input     30 Bit        Muxes := 120   
+	   2 Input     29 Bit        Muxes := 120   
+	   2 Input     28 Bit        Muxes := 1272  
+	   2 Input     27 Bit        Muxes := 120   
+	   2 Input     26 Bit        Muxes := 360   
+	   2 Input     25 Bit        Muxes := 120   
+	   2 Input     24 Bit        Muxes := 312   
+	   2 Input     23 Bit        Muxes := 600   
+	   2 Input     22 Bit        Muxes := 120   
+	   2 Input     21 Bit        Muxes := 120   
+	   2 Input     20 Bit        Muxes := 120   
+	   2 Input     19 Bit        Muxes := 120   
+	   2 Input     18 Bit        Muxes := 120   
+	   2 Input     17 Bit        Muxes := 120   
+	   2 Input     16 Bit        Muxes := 120   
+	   2 Input     15 Bit        Muxes := 120   
+	   2 Input     14 Bit        Muxes := 120   
+	   2 Input     13 Bit        Muxes := 120   
+	   2 Input     12 Bit        Muxes := 120   
+	   2 Input     11 Bit        Muxes := 120   
+	   2 Input     10 Bit        Muxes := 120   
+	   3 Input     10 Bit        Muxes := 120   
+	   2 Input      9 Bit        Muxes := 408   
+	   2 Input      8 Bit        Muxes := 360   
+	  16 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 120   
+	   2 Input      6 Bit        Muxes := 120   
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4440  
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module fft_wrapper 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	  16 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+Module butterfly_unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 10    
+	   3 Input     28 Bit       Adders := 8     
+	   2 Input     23 Bit       Adders := 20    
+	   2 Input     10 Bit       Adders := 10    
+	   2 Input      8 Bit       Adders := 20    
+	   2 Input      6 Bit       Adders := 10    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 362   
+	   2 Input     31 Bit        Muxes := 30    
+	   2 Input     30 Bit        Muxes := 10    
+	   2 Input     29 Bit        Muxes := 10    
+	   2 Input     28 Bit        Muxes := 106   
+	   2 Input     27 Bit        Muxes := 10    
+	   2 Input     26 Bit        Muxes := 30    
+	   2 Input     25 Bit        Muxes := 10    
+	   2 Input     24 Bit        Muxes := 26    
+	   2 Input     23 Bit        Muxes := 50    
+	   2 Input     22 Bit        Muxes := 10    
+	   2 Input     21 Bit        Muxes := 10    
+	   2 Input     20 Bit        Muxes := 10    
+	   2 Input     19 Bit        Muxes := 10    
+	   2 Input     18 Bit        Muxes := 10    
+	   2 Input     17 Bit        Muxes := 10    
+	   2 Input     16 Bit        Muxes := 10    
+	   2 Input     15 Bit        Muxes := 10    
+	   2 Input     14 Bit        Muxes := 10    
+	   2 Input     13 Bit        Muxes := 10    
+	   2 Input     12 Bit        Muxes := 10    
+	   2 Input     11 Bit        Muxes := 10    
+	   2 Input     10 Bit        Muxes := 10    
+	   3 Input     10 Bit        Muxes := 10    
+	   2 Input      9 Bit        Muxes := 34    
+	   2 Input      8 Bit        Muxes := 30    
+	   2 Input      7 Bit        Muxes := 10    
+	   2 Input      6 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 370   
+Module butterfly_unit__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 10    
+	   3 Input     28 Bit       Adders := 8     
+	   2 Input     23 Bit       Adders := 20    
+	   2 Input     10 Bit       Adders := 10    
+	   2 Input      8 Bit       Adders := 20    
+	   2 Input      6 Bit       Adders := 10    
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 363   
+	   2 Input     31 Bit        Muxes := 30    
+	   2 Input     30 Bit        Muxes := 10    
+	   2 Input     29 Bit        Muxes := 10    
+	   2 Input     28 Bit        Muxes := 106   
+	   2 Input     27 Bit        Muxes := 10    
+	   2 Input     26 Bit        Muxes := 30    
+	   2 Input     25 Bit        Muxes := 10    
+	   2 Input     24 Bit        Muxes := 26    
+	   2 Input     23 Bit        Muxes := 50    
+	   2 Input     22 Bit        Muxes := 10    
+	   2 Input     21 Bit        Muxes := 10    
+	   2 Input     20 Bit        Muxes := 10    
+	   2 Input     19 Bit        Muxes := 10    
+	   2 Input     18 Bit        Muxes := 10    
+	   2 Input     17 Bit        Muxes := 10    
+	   2 Input     16 Bit        Muxes := 10    
+	   2 Input     15 Bit        Muxes := 10    
+	   2 Input     14 Bit        Muxes := 10    
+	   2 Input     13 Bit        Muxes := 10    
+	   2 Input     12 Bit        Muxes := 10    
+	   2 Input     11 Bit        Muxes := 10    
+	   2 Input     10 Bit        Muxes := 10    
+	   3 Input     10 Bit        Muxes := 10    
+	   2 Input      9 Bit        Muxes := 34    
+	   2 Input      8 Bit        Muxes := 30    
+	   2 Input      7 Bit        Muxes := 10    
+	   2 Input      6 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 370   
+Module butterfly_unit__parameterized8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 10    
+	   3 Input     28 Bit       Adders := 8     
+	   2 Input     23 Bit       Adders := 20    
+	   2 Input     10 Bit       Adders := 10    
+	   2 Input      8 Bit       Adders := 20    
+	   2 Input      6 Bit       Adders := 10    
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 363   
+	   2 Input     31 Bit        Muxes := 30    
+	   2 Input     30 Bit        Muxes := 10    
+	   2 Input     29 Bit        Muxes := 10    
+	   2 Input     28 Bit        Muxes := 106   
+	   2 Input     27 Bit        Muxes := 10    
+	   2 Input     26 Bit        Muxes := 30    
+	   2 Input     25 Bit        Muxes := 10    
+	   2 Input     24 Bit        Muxes := 26    
+	   2 Input     23 Bit        Muxes := 50    
+	   2 Input     22 Bit        Muxes := 10    
+	   2 Input     21 Bit        Muxes := 10    
+	   2 Input     20 Bit        Muxes := 10    
+	   2 Input     19 Bit        Muxes := 10    
+	   2 Input     18 Bit        Muxes := 10    
+	   2 Input     17 Bit        Muxes := 10    
+	   2 Input     16 Bit        Muxes := 10    
+	   2 Input     15 Bit        Muxes := 10    
+	   2 Input     14 Bit        Muxes := 10    
+	   2 Input     13 Bit        Muxes := 10    
+	   2 Input     12 Bit        Muxes := 10    
+	   2 Input     11 Bit        Muxes := 10    
+	   2 Input     10 Bit        Muxes := 10    
+	   3 Input     10 Bit        Muxes := 10    
+	   2 Input      9 Bit        Muxes := 34    
+	   2 Input      8 Bit        Muxes := 30    
+	   2 Input      7 Bit        Muxes := 10    
+	   2 Input      6 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 370   
+Module butterfly_unit__parameterized11 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 10    
+	   3 Input     28 Bit       Adders := 8     
+	   2 Input     23 Bit       Adders := 20    
+	   2 Input     10 Bit       Adders := 10    
+	   2 Input      8 Bit       Adders := 20    
+	   2 Input      6 Bit       Adders := 10    
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 377   
+	   2 Input     31 Bit        Muxes := 30    
+	   2 Input     30 Bit        Muxes := 10    
+	   2 Input     29 Bit        Muxes := 10    
+	   2 Input     28 Bit        Muxes := 106   
+	   2 Input     27 Bit        Muxes := 10    
+	   2 Input     26 Bit        Muxes := 30    
+	   2 Input     25 Bit        Muxes := 10    
+	   2 Input     24 Bit        Muxes := 26    
+	   2 Input     23 Bit        Muxes := 50    
+	   2 Input     22 Bit        Muxes := 10    
+	   2 Input     21 Bit        Muxes := 10    
+	   2 Input     20 Bit        Muxes := 10    
+	   2 Input     19 Bit        Muxes := 10    
+	   2 Input     18 Bit        Muxes := 10    
+	   2 Input     17 Bit        Muxes := 10    
+	   2 Input     16 Bit        Muxes := 10    
+	   2 Input     15 Bit        Muxes := 10    
+	   2 Input     14 Bit        Muxes := 10    
+	   2 Input     13 Bit        Muxes := 10    
+	   2 Input     12 Bit        Muxes := 10    
+	   2 Input     11 Bit        Muxes := 10    
+	   2 Input     10 Bit        Muxes := 10    
+	   3 Input     10 Bit        Muxes := 10    
+	   2 Input      9 Bit        Muxes := 34    
+	   2 Input      8 Bit        Muxes := 30    
+	   2 Input      7 Bit        Muxes := 10    
+	   2 Input      6 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 370   
+Module butterfly_unit__parameterized13 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 10    
+	   3 Input     28 Bit       Adders := 8     
+	   2 Input     23 Bit       Adders := 20    
+	   2 Input     10 Bit       Adders := 10    
+	   2 Input      8 Bit       Adders := 20    
+	   2 Input      6 Bit       Adders := 10    
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 363   
+	   2 Input     31 Bit        Muxes := 30    
+	   2 Input     30 Bit        Muxes := 10    
+	   2 Input     29 Bit        Muxes := 10    
+	   2 Input     28 Bit        Muxes := 106   
+	   2 Input     27 Bit        Muxes := 10    
+	   2 Input     26 Bit        Muxes := 30    
+	   2 Input     25 Bit        Muxes := 10    
+	   2 Input     24 Bit        Muxes := 26    
+	   2 Input     23 Bit        Muxes := 50    
+	   2 Input     22 Bit        Muxes := 10    
+	   2 Input     21 Bit        Muxes := 10    
+	   2 Input     20 Bit        Muxes := 10    
+	   2 Input     19 Bit        Muxes := 10    
+	   2 Input     18 Bit        Muxes := 10    
+	   2 Input     17 Bit        Muxes := 10    
+	   2 Input     16 Bit        Muxes := 10    
+	   2 Input     15 Bit        Muxes := 10    
+	   2 Input     14 Bit        Muxes := 10    
+	   2 Input     13 Bit        Muxes := 10    
+	   2 Input     12 Bit        Muxes := 10    
+	   2 Input     11 Bit        Muxes := 10    
+	   2 Input     10 Bit        Muxes := 10    
+	   3 Input     10 Bit        Muxes := 10    
+	   2 Input      9 Bit        Muxes := 34    
+	   2 Input      8 Bit        Muxes := 30    
+	   2 Input      7 Bit        Muxes := 10    
+	   2 Input      6 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 370   
+Module butterfly_unit__parameterized15 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 10    
+	   3 Input     28 Bit       Adders := 8     
+	   2 Input     23 Bit       Adders := 20    
+	   2 Input     10 Bit       Adders := 10    
+	   2 Input      8 Bit       Adders := 20    
+	   2 Input      6 Bit       Adders := 10    
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 354   
+	   2 Input     31 Bit        Muxes := 30    
+	   2 Input     30 Bit        Muxes := 10    
+	   2 Input     29 Bit        Muxes := 10    
+	   2 Input     28 Bit        Muxes := 106   
+	   2 Input     27 Bit        Muxes := 10    
+	   2 Input     26 Bit        Muxes := 30    
+	   2 Input     25 Bit        Muxes := 10    
+	   2 Input     24 Bit        Muxes := 26    
+	   2 Input     23 Bit        Muxes := 50    
+	   2 Input     22 Bit        Muxes := 10    
+	   2 Input     21 Bit        Muxes := 10    
+	   2 Input     20 Bit        Muxes := 10    
+	   2 Input     19 Bit        Muxes := 10    
+	   2 Input     18 Bit        Muxes := 10    
+	   2 Input     17 Bit        Muxes := 10    
+	   2 Input     16 Bit        Muxes := 10    
+	   2 Input     15 Bit        Muxes := 10    
+	   2 Input     14 Bit        Muxes := 10    
+	   2 Input     13 Bit        Muxes := 10    
+	   2 Input     12 Bit        Muxes := 10    
+	   2 Input     11 Bit        Muxes := 10    
+	   2 Input     10 Bit        Muxes := 10    
+	   3 Input     10 Bit        Muxes := 10    
+	   2 Input      9 Bit        Muxes := 34    
+	   2 Input      8 Bit        Muxes := 30    
+	   2 Input      7 Bit        Muxes := 10    
+	   2 Input      6 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 370   
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 4 processes.
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:13:11 ; elapsed = 00:13:22 . Memory (MB): peak = 2328.105 ; gain = 1387.723 ; free physical = 30417 ; free virtual = 181790
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design fft_wrapper has port decode[0] driven by constant 1
+DSP Report: Generating DSP fract0, operation Mode is: (A:0xb504f7)*B.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: Generating DSP fract0, operation Mode is: (PCIN>>17)+(A:0xb504f7)*B.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: Generating DSP fract0, operation Mode is: (A:0xb504f7)*B.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: Generating DSP fract0, operation Mode is: (PCIN>>17)+(A:0xb504f7)*B.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+WARNING: [Synth 8-3331] design butterfly_unit__parameterized11__GB3 has unconnected port I60[0]
+WARNING: [Synth 8-3331] design butterfly_unit__parameterized11__GB3 has unconnected port I61[0]
+WARNING: [Synth 8-3331] design butterfly_unit__parameterized11__GB3 has unconnected port I62[0]
+WARNING: [Synth 8-3331] design butterfly_unit__parameterized11__GB3 has unconnected port \A[i] [0]
+WARNING: [Synth 8-3331] design butterfly_unit__parameterized11__GB3 has unconnected port p_1_in4_out[0]
+WARNING: [Synth 8-3331] design butterfly_unit__parameterized11__GB3 has unconnected port I63[0]
+WARNING: [Synth 8-3331] design butterfly_unit__parameterized11__GB3 has unconnected port I64[0]
+WARNING: [Synth 8-3331] design butterfly_unit__parameterized11__GB3 has unconnected port \A[r] [0]
+WARNING: [Synth 8-3331] design butterfly_unit__parameterized11__GB3 has unconnected port I65[0]
+WARNING: [Synth 8-3331] design butterfly_unit__parameterized11__GB3 has unconnected port \B[r] [0]
+WARNING: [Synth 8-3331] design butterfly_unit__parameterized11__GB3 has unconnected port \B[i] [0]
+WARNING: [Synth 8-3331] design butterfly_unit__parameterized11__GB3 has unconnected port p_1_in[0]
+DSP Report: Generating DSP fract0, operation Mode is: (A:0xb504f7)*B.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: Generating DSP fract0, operation Mode is: (PCIN>>17)+(A:0xb504f7)*B.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: Generating DSP fract0, operation Mode is: (A:0xb504f7)*B.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: Generating DSP fract0, operation Mode is: (PCIN>>17)+(A:0xb504f7)*B.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+WARNING: [Synth 8-3331] design butterfly_unit__parameterized15__GB3 has unconnected port I120[0]
+WARNING: [Synth 8-3331] design butterfly_unit__parameterized15__GB3 has unconnected port I121[0]
+WARNING: [Synth 8-3331] design butterfly_unit__parameterized15__GB3 has unconnected port result0_out[0]
+WARNING: [Synth 8-3331] design butterfly_unit__parameterized15__GB3 has unconnected port \A[i] [0]
+WARNING: [Synth 8-3331] design butterfly_unit__parameterized15__GB3 has unconnected port I122[0]
+WARNING: [Synth 8-3331] design butterfly_unit__parameterized15__GB3 has unconnected port I123[0]
+WARNING: [Synth 8-3331] design butterfly_unit__parameterized15__GB3 has unconnected port p_1_in[0]
+WARNING: [Synth 8-3331] design butterfly_unit__parameterized15__GB3 has unconnected port \A[r] [0]
+WARNING: [Synth 8-3331] design butterfly_unit__parameterized15__GB3 has unconnected port \B[r] [0]
+WARNING: [Synth 8-3331] design butterfly_unit__parameterized15__GB3 has unconnected port \B[i] [0]
+WARNING: [Synth 8-3331] design butterfly_unit__parameterized15__GB3 has unconnected port I124[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:13:34 ; elapsed = 00:14:12 . Memory (MB): peak = 2328.105 ; gain = 1387.723 ; free physical = 28930 ; free virtual = 180303
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:13:34 ; elapsed = 00:14:12 . Memory (MB): peak = 2328.105 ; gain = 1387.723 ; free physical = 28930 ; free virtual = 180303
+
+Report RTL Partitions: 
++------+-------------------------------------+------------+----------+
+|      |RTL Partition                        |Replication |Instances |
++------+-------------------------------------+------------+----------+
+|1     |butterfly_unit__GBM0                 |           7|     20894|
+|2     |butterfly_unit__GBM1                 |           7|     20960|
+|3     |butterfly_unit__parameterized5__GB0  |           1|     20953|
+|4     |butterfly_unit__parameterized5__GB1  |           1|     20892|
+|5     |butterfly_unit__parameterized8__GB0  |           1|     20953|
+|6     |butterfly_unit__parameterized8__GB1  |           1|     20892|
+|7     |butterfly_unit__parameterized11__GB0 |           1|     35663|
+|8     |butterfly_unit__parameterized11__GB1 |           1|      2579|
+|9     |butterfly_unit__parameterized11__GB2 |           1|      2014|
+|10    |butterfly_unit__parameterized11__GB3 |           1|      3498|
+|11    |butterfly_unit__parameterized13__GB0 |           1|     20953|
+|12    |butterfly_unit__parameterized13__GB1 |           1|     20892|
+|13    |butterfly_unit__parameterized15__GB0 |           1|     35975|
+|14    |butterfly_unit__parameterized15__GB1 |           1|      3985|
+|15    |butterfly_unit__parameterized15__GB2 |           1|      2405|
+|16    |butterfly_unit__parameterized15__GB3 |           1|      3511|
+|17    |fft_wrapper__GC0                     |           1|      1380|
++------+-------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP:
++---------------+---------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping               | Neg Edge Clk | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+---------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|butterfly_unit | (A:0xb504f7)*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|butterfly_unit | (PCIN>>17)+(A:0xb504f7)*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|butterfly_unit | (A:0xb504f7)*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|butterfly_unit | (PCIN>>17)+(A:0xb504f7)*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|butterfly_unit | (A:0xb504f7)*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|butterfly_unit | (PCIN>>17)+(A:0xb504f7)*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|butterfly_unit | (A:0xb504f7)*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|butterfly_unit | (PCIN>>17)+(A:0xb504f7)*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
++---------------+---------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:14:22 ; elapsed = 00:15:11 . Memory (MB): peak = 2328.105 ; gain = 1387.723 ; free physical = 28185 ; free virtual = 179558
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:14:22 ; elapsed = 00:15:11 . Memory (MB): peak = 2328.105 ; gain = 1387.723 ; free physical = 28185 ; free virtual = 179558
+
+Report RTL Partitions: 
++------+-------------------------------------+------------+----------+
+|      |RTL Partition                        |Replication |Instances |
++------+-------------------------------------+------------+----------+
+|1     |butterfly_unit__GBM0                 |           7|      2962|
+|2     |butterfly_unit__GBM1                 |           7|      3008|
+|3     |butterfly_unit__parameterized5__GB0  |           1|      3021|
+|4     |butterfly_unit__parameterized5__GB1  |           1|      2907|
+|5     |butterfly_unit__parameterized8__GB0  |           1|      3021|
+|6     |butterfly_unit__parameterized8__GB1  |           1|      2907|
+|7     |butterfly_unit__parameterized11__GB0 |           1|      7909|
+|8     |butterfly_unit__parameterized11__GB1 |           1|       242|
+|9     |butterfly_unit__parameterized11__GB2 |           1|       110|
+|10    |butterfly_unit__parameterized13__GB0 |           1|      3021|
+|11    |butterfly_unit__parameterized13__GB1 |           1|      2907|
+|12    |butterfly_unit__parameterized15__GB0 |           1|      7340|
+|13    |butterfly_unit__parameterized15__GB1 |           1|       354|
+|14    |butterfly_unit__parameterized15__GB2 |           1|       222|
+|15    |fft_wrapper__GC0                     |           1|      1185|
++------+-------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:14:45 ; elapsed = 00:15:35 . Memory (MB): peak = 2328.105 ; gain = 1387.723 ; free physical = 28195 ; free virtual = 179577
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:14:46 ; elapsed = 00:15:36 . Memory (MB): peak = 2328.105 ; gain = 1387.723 ; free physical = 28215 ; free virtual = 179596
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------------------+------------+----------+
+|      |RTL Partition                        |Replication |Instances |
++------+-------------------------------------+------------+----------+
+|1     |butterfly_unit__GBM0                 |           6|      2940|
+|2     |butterfly_unit__GBM1                 |           6|      2992|
+|3     |butterfly_unit__parameterized5__GB0  |           1|      3005|
+|4     |butterfly_unit__parameterized5__GB1  |           1|      2872|
+|5     |butterfly_unit__parameterized8__GB0  |           1|      3005|
+|6     |butterfly_unit__parameterized8__GB1  |           1|      2872|
+|7     |butterfly_unit__parameterized11__GB0 |           1|      7483|
+|8     |butterfly_unit__parameterized11__GB1 |           1|       240|
+|9     |butterfly_unit__parameterized11__GB2 |           1|       110|
+|10    |butterfly_unit__parameterized13__GB0 |           1|      3021|
+|11    |butterfly_unit__parameterized13__GB1 |           1|      2907|
+|12    |butterfly_unit__parameterized15__GB0 |           1|      7026|
+|13    |butterfly_unit__parameterized15__GB1 |           1|       350|
+|14    |butterfly_unit__parameterized15__GB2 |           1|       222|
+|15    |fft_wrapper__GC0                     |           1|      1174|
+|16    |butterfly_unit__GBM1__1              |           1|      3008|
+|17    |butterfly_unit__GBM0__1              |           1|      2962|
++------+-------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:15:02 ; elapsed = 00:15:53 . Memory (MB): peak = 2328.105 ; gain = 1387.723 ; free physical = 28201 ; free virtual = 179583
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:15:02 ; elapsed = 00:15:53 . Memory (MB): peak = 2328.105 ; gain = 1387.723 ; free physical = 28202 ; free virtual = 179584
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:15:02 ; elapsed = 00:15:53 . Memory (MB): peak = 2328.105 ; gain = 1387.723 ; free physical = 28200 ; free virtual = 179582
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:15:06 ; elapsed = 00:15:57 . Memory (MB): peak = 2328.105 ; gain = 1387.723 ; free physical = 28189 ; free virtual = 179570
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:15:06 ; elapsed = 00:15:57 . Memory (MB): peak = 2328.105 ; gain = 1387.723 ; free physical = 28175 ; free virtual = 179556
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:15:08 ; elapsed = 00:15:59 . Memory (MB): peak = 2328.105 ; gain = 1387.723 ; free physical = 28187 ; free virtual = 179569
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:15:10 ; elapsed = 00:16:01 . Memory (MB): peak = 2328.105 ; gain = 1387.723 ; free physical = 28180 ; free virtual = 179562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:15:12 ; elapsed = 00:16:03 . Memory (MB): peak = 2328.105 ; gain = 1387.723 ; free physical = 28171 ; free virtual = 179552
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:15:12 ; elapsed = 00:16:03 . Memory (MB): peak = 2328.105 ; gain = 1387.723 ; free physical = 28176 ; free virtual = 179557
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |dist_mem_gen_0 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+--------------------+------+
+|      |Cell                |Count |
++------+--------------------+------+
+|1     |dist_mem_gen_0_bbox |     1|
+|2     |BUFG                |     1|
+|3     |CARRY4              |  1489|
+|4     |DSP48E1             |     8|
+|5     |LUT1                |  2354|
+|6     |LUT2                |  3484|
+|7     |LUT3                |  2487|
+|8     |LUT4                |  5720|
+|9     |LUT5                |  4676|
+|10    |LUT6                | 12371|
+|11    |MUXF7               |    63|
+|12    |MUXF8               |     6|
+|13    |XORCY               |   690|
+|14    |FDRE                |    35|
+|15    |IBUF                |     9|
+|16    |OBUF                |    16|
++------+--------------------+------+
+
+Report Instance Areas: 
++------+----------------+--------------------------------+------+
+|      |Instance        |Module                          |Cells |
++------+----------------+--------------------------------+------+
+|1     |top             |                                | 33921|
+|2     |  FFT           |fft_8point_3stage               |  4701|
+|3     |    BU_stage3_1 |butterfly_unit__parameterized11 |  3161|
+|4     |    BU_stage3_3 |butterfly_unit__parameterized15 |  1540|
++------+----------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:15:12 ; elapsed = 00:16:03 . Memory (MB): peak = 2328.105 ; gain = 1387.723 ; free physical = 28174 ; free virtual = 179556
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 24 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:14:23 ; elapsed = 00:15:18 . Memory (MB): peak = 2328.105 ; gain = 881.164 ; free physical = 28200 ; free virtual = 179582
+Synthesis Optimization Complete : Time (s): cpu = 00:15:13 ; elapsed = 00:16:04 . Memory (MB): peak = 2328.105 ; gain = 1387.723 ; free physical = 28197 ; free virtual = 179578
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2196 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'fft_wrapper' is not ideal for floorplanning, since the cellview 'fft_wrapper' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 690 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 690 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+267 Infos, 225 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:16:36 ; elapsed = 00:16:11 . Memory (MB): peak = 2367.836 ; gain = 1356.113 ; free physical = 30459 ; free virtual = 181840
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2399.859 ; gain = 32.023 ; free physical = 30435 ; free virtual = 181820
+report_utilization: Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.48 . Memory (MB): peak = 2399.859 ; gain = 0.000 ; free physical = 30454 ; free virtual = 181839
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 10 16:38:46 2018...

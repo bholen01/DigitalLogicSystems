@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Apr 17 16:05:01 2018
+# Process ID: 5228
+# Current directory: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent700 C:\Users\bholen01\Downloads\nexys4ddrvgamouseoverlay1\Nexys4DDRVGAMouseOverlay\Nexys4DDRVGAMouseOverlay.xpr
+# Log file: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/vivado.log
+# Journal file: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.xpr
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

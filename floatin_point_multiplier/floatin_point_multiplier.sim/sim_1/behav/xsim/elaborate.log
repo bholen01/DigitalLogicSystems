@@ -1,0 +1,34 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 74decd8987844eb8ae1e39eac47d7f05 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot interface_test_behav xil_defaultlib.interface_test -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture full_adder_arch of entity xil_defaultlib.full_adder [full_adder_default]
+Compiling architecture behavioral of entity xil_defaultlib.summation_unit [summation_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.array_multiplier [\array_multiplier(n=24)\]
+Compiling architecture behavioral of entity xil_defaultlib.floating_point_multiplier [floating_point_multiplier_defaul...]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture vcc_v of entity unisim.VCC [vcc_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11111110")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000000100")(0...]
+Compiling architecture structure of entity xil_defaultlib.dist_mem_gen_0_rom [dist_mem_gen_0_rom_default]
+Compiling architecture structure of entity xil_defaultlib.dist_mem_gen_0_dist_mem_gen_v8_0_12_synth [dist_mem_gen_0_dist_mem_gen_v8_0...]
+Compiling architecture structure of entity xil_defaultlib.dist_mem_gen_0_dist_mem_gen_v8_0_12 [dist_mem_gen_0_dist_mem_gen_v8_0...]
+Compiling architecture structure of entity xil_defaultlib.dist_mem_gen_0 [dist_mem_gen_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.hardware_interface [hardware_interface_default]
+Compiling architecture behavioral of entity xil_defaultlib.interface_test
+Built simulation snapshot interface_test_behav

@@ -1,0 +1,5 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/EE26/floatin_point_multiplier/floatin_point_multiplier.srcs/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dist_mem_gen_0_rom
+INFO: [VRFC 10-307] analyzing entity dist_mem_gen_0_dist_mem_gen_v8_0_12_synth
+INFO: [VRFC 10-307] analyzing entity dist_mem_gen_0_dist_mem_gen_v8_0_12
+INFO: [VRFC 10-307] analyzing entity dist_mem_gen_0

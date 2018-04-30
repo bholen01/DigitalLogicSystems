@@ -1,0 +1,133 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Apr 17 16:05:01 2018
+# Process ID: 5228
+# Current directory: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent700 C:\Users\bholen01\Downloads\nexys4ddrvgamouseoverlay1\Nexys4DDRVGAMouseOverlay\Nexys4DDRVGAMouseOverlay.xpr
+# Log file: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/vivado.log
+# Journal file: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/tkappenm/Desktop/nexys4ddrvgamouseoverlay/Nexys4DDRVGAMouseOverlay' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'Nexys4DDRVGAMouseOverlay.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 793.262 ; gain = 154.293
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Tue Apr 17 16:06:42 2018] Launched impl_1...
+Run output will be captured here: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:01:00 . Memory (MB): peak = 816.926 ; gain = 0.000
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Jan 23 2017-19:37:29
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 817.688 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274664078A
+set_property PROGRAM.FILE {C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/debug_nets.ltx
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/imports/Basys3_Basic_Demo_1/vga_ctrl.vhd" into library xil_defaultlib [C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/imports/Basys3_Basic_Demo_1/vga_ctrl.vhd:1]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "VGA_GREEN_O". [C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/imports/Basys3_Basic_Demo_1/vga_ctrl.vhd:412]
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+[Tue Apr 17 16:12:36 2018] Launched synth_1...
+Run output will be captured here: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:01:00 . Memory (MB): peak = 929.246 ; gain = 0.000
+INFO: [Common 17-344] 'launch_runs' was cancelled
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_runs synth_1 -jobs 8
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/imports/Basys3_Basic_Demo_1/vga_ctrl.vhd" into library xil_defaultlib [C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/imports/Basys3_Basic_Demo_1/vga_ctrl.vhd:1]
+[Tue Apr 17 16:14:11 2018] Launched synth_1...
+Run output will be captured here: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:01:00 . Memory (MB): peak = 929.246 ; gain = 0.000
+launch_runs impl_1 -jobs 8
+[Tue Apr 17 16:15:15 2018] Launched impl_1...
+Run output will be captured here: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:01:00 . Memory (MB): peak = 929.246 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Tue Apr 17 16:17:57 2018] Launched impl_1...
+Run output will be captured here: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:01:00 . Memory (MB): peak = 929.246 ; gain = 0.000
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Tue Apr 17 16:19:47 2018] Launched impl_1...
+Run output will be captured here: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:01:00 . Memory (MB): peak = 942.828 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/imports/Basys3_Basic_Demo_1/vga_ctrl.vhd" into library xil_defaultlib [C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/imports/Basys3_Basic_Demo_1/vga_ctrl.vhd:1]
+[Tue Apr 17 16:23:03 2018] Launched synth_1...
+Run output will be captured here: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:01:00 . Memory (MB): peak = 946.293 ; gain = 3.465
+launch_runs impl_1 -jobs 8
+[Tue Apr 17 16:24:18 2018] Launched impl_1...
+Run output will be captured here: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:01:00 . Memory (MB): peak = 946.293 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Tue Apr 17 16:26:54 2018] Launched impl_1...
+Run output will be captured here: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:01:00 . Memory (MB): peak = 963.660 ; gain = 0.000
+set_property PROBES.FILE {C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/debug_nets.ltx
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210274664078A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210274664078A

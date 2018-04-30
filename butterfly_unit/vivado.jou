@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Apr 10 16:03:08 2018
+# Process ID: 11156
+# Current directory: Z:/EE26/butterfly_unit
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10540 Z:\EE26\butterfly_unit\butterfly_unit.xpr
+# Log file: Z:/EE26/butterfly_unit/vivado.log
+# Journal file: Z:/EE26/butterfly_unit\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Z:/EE26/butterfly_unit/butterfly_unit.xpr
+launch_simulation
+source fft_8point_3stage_test.tcl
+add_wave {{/fft_8point_3stage_test/FW/s}} 
+run 10 ps
+run 10 ps
+close_sim

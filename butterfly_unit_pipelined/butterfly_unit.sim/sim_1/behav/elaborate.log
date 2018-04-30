@@ -1,0 +1,41 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 732eb6a54a2c461fb9d272e75a6d62f7 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot fft_8point_3stage_test_behav xil_defaultlib.fft_8point_3stage_test -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee_proposed.fixed_float_types
+Compiling package ieee_proposed.fixed_pkg
+Compiling package ieee.math_real
+Compiling package ieee_proposed.float_pkg
+Compiling package xil_defaultlib.complex
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture vcc_v of entity unisim.VCC [vcc_default]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111111111110")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000000001")(0...]
+Compiling architecture structure of entity xil_defaultlib.dist_mem_gen_0_rom [dist_mem_gen_0_rom_default]
+Compiling architecture structure of entity xil_defaultlib.dist_mem_gen_0_dist_mem_gen_v8_0_11_synth [dist_mem_gen_0_dist_mem_gen_v8_0...]
+Compiling architecture structure of entity xil_defaultlib.dist_mem_gen_0_dist_mem_gen_v8_0_11 [dist_mem_gen_0_dist_mem_gen_v8_0...]
+Compiling architecture structure of entity xil_defaultlib.dist_mem_gen_0 [dist_mem_gen_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_Latch_8by8_complex [d_latch_8by8_complex_default]
+Compiling architecture behavioral of entity xil_defaultlib.butterfly_unit [butterfly_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.butterfly_unit [\butterfly_unit(k=2)\]
+Compiling architecture behavioral of entity xil_defaultlib.butterfly_unit [\butterfly_unit(k=1)\]
+Compiling architecture behavioral of entity xil_defaultlib.butterfly_unit [\butterfly_unit(k=3)\]
+Compiling architecture behavioral of entity xil_defaultlib.fft_8point_3stage [fft_8point_3stage_default]
+Compiling architecture behavioral of entity xil_defaultlib.fft_wrapper [fft_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.fft_8point_3stage_test
+Built simulation snapshot fft_8point_3stage_test_behav

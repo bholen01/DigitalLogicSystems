@@ -1,0 +1,611 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+Process ID: 5228
+
+Current time: 	4/17/18 4:05:18 PM EDT
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1680x1050
+Screen resolution (DPI): 96
+Available screens: 2
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.4/tps/win64/jre
+
+User name: 	bholen01
+User home directory: C:/Users/bholen01
+User working directory: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI base root directory: C:/Xilinx/Vivado
+RDI data directory: C:/Xilinx/Vivado/2016.4/data
+RDI bin directory: C:/Xilinx/Vivado/2016.4/bin
+
+Vivado preferences path: C:/Users/bholen01/AppData/Roaming/Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: C:/Users/bholen01/AppData/Roaming/Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	179 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 414 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 58 MB (+58833kb) [00:00:07]
+// [Engine Memory]: 388 MB (+255146kb) [00:00:07]
+// aK:r (cd:JFrame): Older Project Version: addNotify
+// [Engine Memory]: 414 MB (+7225kb) [00:00:09]
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aK:r)
+// Opening Vivado Project: C:\Users\bholen01\Downloads\nexys4ddrvgamouseoverlay1\Nexys4DDRVGAMouseOverlay\Nexys4DDRVGAMouseOverlay.xpr. Version: Vivado v2014.4 
+// bt:g (cd:JFrame):  Open Project : addNotify
+dismissDialog("Older Project Version"); // aK:r (cd:JFrame)
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 447 MB. GUI used memory: 29 MB. Current time: 4/17/18 4:05:20 PM EDT
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/tkappenm/Desktop/nexys4ddrvgamouseoverlay/Nexys4DDRVGAMouseOverlay' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [Project 1-230] Project 'Nexys4DDRVGAMouseOverlay.xpr' upgraded for this version of Vivado. INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 524 MB (+93312kb) [00:00:14]
+// [Engine Memory]: 554 MB (+3747kb) [00:00:16]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 793.262 ; gain = 154.293 
+// Project name: Nexys4DDRVGAMouseOverlay; location: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_ctrl - Behavioral (vga_ctrl.vhd)]", 1); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f:q (cd:JFrame): Launch Runs: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 578 MB. GUI used memory: 35 MB. Current time: 4/17/18 4:05:35 PM EDT
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// y:aO (cd:JFrame): Run Synthesis: addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, y:aO)
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Run Synthesis"); // y:aO (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+selectButton(RDIResource.BaseDialog_NO, "No"); // a:JButton (JPanel:JComponent, y:aO)
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_LAUNCH
+// bt:g (cd:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// [GUI Memory]: 63 MB (+2125kb) [00:00:37]
+// [GUI Memory]: 69 MB (+2561kb) [00:00:47]
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Apr 17 16:06:42 2018] Launched impl_1... Run output will be captured here: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:01:00 . Memory (MB): peak = 816.926 ; gain = 0.000 
+// Elapsed time: 61 seconds
+dismissDialog("Generate Bitstream"); // bt:g (cd:JFrame)
+// [Engine Memory]: 584 MB (+2939kb) [00:01:43]
+// Elapsed time: 11 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_ctrl - Behavioral (vga_ctrl.vhd), Inst_MouseCtl - MouseCtl - Behavioral (MouseCtl.vhd)]", 3); // y:i (D:JPanel, cd:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_ctrl - Behavioral (vga_ctrl.vhd), clk_wiz_0_inst - clk_wiz_0 - xilinx (clk_wiz_0.vhd)]", 2); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_ctrl - Behavioral (vga_ctrl.vhd)]", 1, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_ctrl - Behavioral (vga_ctrl.vhd)]", 1, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_ctrl - Behavioral (vga_ctrl.vhd)]", 1, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+// [GUI Memory]: 77 MB (+4881kb) [00:01:48]
+selectCodeEditor("vga_ctrl.vhd", 421, 282); // bF:I (JPanel:JComponent, cd:JFrame)
+// [GUI Memory]: 81 MB (+176kb) [00:02:25]
+// Elapsed time: 32 seconds
+selectCodeEditor("vga_ctrl.vhd", 464, 292); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("vga_ctrl.vhd", 429, 282); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("vga_ctrl.vhd", 88, 193); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("vga_ctrl.vhd", 88, 193, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("vga_ctrl.vhd", 442, 278); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("vga_ctrl.vhd", 42, 137); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("vga_ctrl.vhd", 353, 274, false, false, false, true, false); // bF:I (JPanel:JComponent, cd:JFrame) - Popup Trigger
+selectCodeEditor("vga_ctrl.vhd", 343, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a:JRadioButton (JPanel:JComponent, ah:y)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Bitstream Generation Completed"); // ah:y (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Open Target]", 27, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bt:g (cd:JFrame):  Auto Connect : addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 602 MB. GUI used memory: 40 MB. Current time: 4/17/18 4:08:30 PM EDT
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2016.4   **** Build date : Jan 23 2017-19:37:29     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 817.688 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274664078A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit} [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 673 MB (+62476kb) [00:03:28]
+dismissDialog("Auto Connect"); // bt:g (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit} [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Tcl Message: ERROR: [Common 17-48] File not found: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/debug_nets.ltx 
+// 'B' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// Elapsed time: 26 seconds
+selectCodeEditor("vga_ctrl.vhd", 234, 391); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u:K (t:D, cd:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys4DDR_Master.xdc]", 4, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys4DDR_Master.xdc]", 4, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 699 MB. GUI used memory: 41 MB. Current time: 4/17/18 4:09:35 PM EDT
+// Elapsed time: 42 seconds
+selectCodeEditor("Nexys4DDR_Master.xdc", 532, 112); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Nexys4DDR_Master.xdc", 532, 112, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("Nexys4DDR_Master.xdc", 554, 128); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Nexys4DDR_Master.xdc", 554, 128, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("Nexys4DDR_Master.xdc", 539, 114); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Nexys4DDR_Master.xdc", 539, 114, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("Nexys4DDR_Master.xdc", 559, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Nexys4DDR_Master.xdc", 559, 127, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_ctrl.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("vga_ctrl.vhd", 106, 380); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("vga_ctrl.vhd", 106, 380, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("vga_ctrl.vhd", 217, 503); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("vga_ctrl.vhd", 215, 440); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("vga_ctrl.vhd", 222, 437); // bF:I (JPanel:JComponent, cd:JFrame)
+// [Engine Memory]: 713 MB (+6988kb) [00:05:42]
+// Elapsed time: 22 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// [GUI Memory]: 89 MB (+3862kb) [00:05:58]
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 22 seconds
+selectCodeEditor("vga_ctrl.vhd", 296, 478); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// y:aO (cd:JFrame): Run Synthesis: addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // y:aO (cd:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// Elapsed time: 30 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, bt:g)
+// 'k' command handler elapsed time: 33 seconds
+selectCodeEditor("vga_ctrl.vhd", 197, 433); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("vga_ctrl.vhd", 185, 432); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("vga_ctrl.vhd", 364, 444); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton("HStatusBar_ProgressStatusItem_Cancel", "Cancel"); // NullButton:JButton (NullPanel:JPanel, cd:JFrame)
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Apr 17 16:12:36 2018] Launched synth_1... Run output will be captured here: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:01:00 . Memory (MB): peak = 929.246 ; gain = 0.000 
+// Tcl Message: INFO: [Common 17-344] 'launch_runs' was cancelled 
+// Elapsed time: 14 seconds
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 20 seconds
+selectCodeEditor("vga_ctrl.vhd", 195, 430); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Apr 17 16:14:11 2018] Launched synth_1... Run output will be captured here: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:01:00 . Memory (MB): peak = 929.246 ; gain = 0.000 
+// 'k' command handler elapsed time: 61 seconds
+// Elapsed time: 60 seconds
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// ah:y (cd:JFrame): Synthesis Completed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Apr 17 16:15:15 2018] Launched impl_1... Run output will be captured here: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:01:00 . Memory (MB): peak = 929.246 ; gain = 0.000 
+// 'c' command handler elapsed time: 61 seconds
+// Elapsed time: 60 seconds
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// [GUI Memory]: 94 MB (+312kb) [00:10:19]
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Implementation Completed: addNotify
+// Elapsed time: 97 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a:JRadioButton (JPanel:JComponent, ah:y)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// 'cn' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// bt:g (cd:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Apr 17 16:17:57 2018] Launched impl_1... Run output will be captured here: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:01:00 . Memory (MB): peak = 929.246 ; gain = 0.000 
+// Elapsed time: 60 seconds
+dismissDialog("Generate Bitstream"); // bt:g (cd:JFrame)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; write_bitstream ERROR ;  ;  ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ; Tue Apr 17 16:14:27 EDT 2018 ; 00:02:57 ; Vivado Implementation Defaults (Vivado Implementation 2014) ; xc7a100tcsg324-1 ; Vivado Implementation Defaults", 1, "impl_1", 0, false); // T:ab (JViewport:JComponent, cd:JFrame)
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.3s
+// HMemoryUtils.trashcanNow. Engine heap size: 720 MB. GUI used memory: 46 MB. Current time: 4/17/18 4:18:06 PM EDT
+// Elapsed time: 12 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]. , [Common 17-48] File not found: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/debug_nets.ltx. ]", 21, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// HOptionPane Error: "The file 'C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/<br>Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit' does not exist.<br>Please specify a valid file name. (Invalid File Name)"
+selectButton("RDIResource.HFileChooserPanel_FILE_DOES_NOT_EXIST_PLEASE_SPECIFY_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, G:JDialog)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, be:aj)
+// 'B' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, f:q)
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Bitstream Settings]", 24, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_BITSTREAM_SETTINGS
+// Project Settings: addNotify
+selectButton("Implementation", "Implementation"); // JideButton:JButton (ScrollableButtonPanel:ButtonPanel, i:aA)
+selectButton("Bitstream", "Bitstream"); // JideButton:JButton (ScrollableButtonPanel:ButtonPanel, i:aA)
+selectButton("CANCEL", "Cancel"); // JButton:AbstractButton (ButtonPanel:JPanel, i:aA)
+dismissDialog("Project Settings"); // i:aA (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_LAUNCH
+// bt:g (cd:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, bt:g)
+// Elapsed time: 14 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]. , [Common 17-48] File not found: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/debug_nets.ltx. ]", 21, false, false, false, false, true, false); // ah:i (JViewport:JComponent, cd:JFrame) - Popup Trigger
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]. , [Common 17-48] File not found: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/debug_nets.ltx. ]", 21, false); // ah:i (JViewport:JComponent, cd:JFrame)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Apr 17 16:19:47 2018] Launched impl_1... Run output will be captured here: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:01:00 . Memory (MB): peak = 942.828 ; gain = 0.000 
+// Elapsed time: 36 seconds
+dismissDialog("Generate Bitstream"); // bt:g (cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1]", 23, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]. , [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.. Resolution: . 1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR. 2. Manually launch hw_server with -e set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number> to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].. ]", 20, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]. , [Common 17-48] File not found: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/debug_nets.ltx. ]", 21, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]. , [Common 17-48] File not found: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/debug_nets.ltx. ]", 21, false, false, false, false, false, true); // ah:i (JViewport:JComponent, cd:JFrame) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]. , [Common 17-48] File not found: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/debug_nets.ltx. ]", 21, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]. , [Common 17-48] File not found: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/debug_nets.ltx. ]", 21, false, false, false, false, true, false); // ah:i (JViewport:JComponent, cd:JFrame) - Popup Trigger
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]. , [Common 17-48] File not found: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/debug_nets.ltx. ]", 21, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g:JCheckBox (JPanel:JComponent, cd:JFrame): FALSE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g:JCheckBox (JPanel:JComponent, cd:JFrame): FALSE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g:JCheckBox (JPanel:JComponent, cd:JFrame): TRUE
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // g:JCheckBox (JPanel:JComponent, cd:JFrame): FALSE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g:JCheckBox (JPanel:JComponent, cd:JFrame): FALSE
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, true); // g:JCheckBox (JPanel:JComponent, cd:JFrame): TRUE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, [Vivado 12-1345] Error(s) found during DRC. Bitgen not run.. ]", 8, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, [DRC 23-20] Rule violation (NSTD-1) Unspecified I/O Standard - 2 out of 17 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: VGA_HS_O, VGA_VS_O.. ]", 7, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys4DDR_Master.xdc", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("Nexys4DDR_Master.xdc", 304, 95); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Nexys4DDR_Master.xdc", 304, 95, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("Nexys4DDR_Master.xdc", 304, 95); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Nexys4DDR_Master.xdc", 304, 95); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Nexys4DDR_Master.xdc", 312, 199); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("Nexys4DDR_Master.xdc", 339, 350); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_ctrl.vhd", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("vga_ctrl.vhd", 85, 370); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("vga_ctrl.vhd", 85, 370, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys4DDR_Master.xdc", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("Nexys4DDR_Master.xdc", 559, 349); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 8 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, bt:g)
+// 'k' command handler elapsed time: 9 seconds
+// HMemoryUtils.trashcanNow. Engine heap size: 746 MB. GUI used memory: 48 MB. Current time: 4/17/18 4:22:16 PM EDT
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Apr 17 16:23:03 2018] Launched synth_1... Run output will be captured here: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:01:00 . Memory (MB): peak = 946.293 ; gain = 3.465 
+// Elapsed time: 51 seconds
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 21, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Apr 17 16:24:18 2018] Launched impl_1... Run output will be captured here: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:01:00 . Memory (MB): peak = 946.293 ; gain = 0.000 
+// 'c' command handler elapsed time: 61 seconds
+// Elapsed time: 60 seconds
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// [GUI Memory]: 99 MB (+459kb) [00:19:36]
+// Elapsed time: 41 seconds
+selectCodeEditor("Nexys4DDR_Master.xdc", 653, 385); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Implementation Completed: addNotify
+// Elapsed time: 53 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// bt:g (cd:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, bt:g)
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Apr 17 16:26:54 2018] Launched impl_1... Run output will be captured here: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:01:00 . Memory (MB): peak = 963.660 ; gain = 0.000 
+// Elapsed time: 56 seconds
+dismissDialog("Generate Bitstream"); // bt:g (cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 103 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Bitstream Generation Completed"); // ah:y (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit} [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Tcl Message: ERROR: [Common 17-48] File not found: C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/debug_nets.ltx 
+// 'B' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+setText(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_DEBUG_PROBES_FILE, (String) null); // ah:ak (ag:JPanel, be:aj)
+setText(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_DEBUG_PROBES_FILE, (String) null); // ah:ak (ag:JPanel, be:aj)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bholen01/Downloads/nexys4ddrvgamouseoverlay1/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit} [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 9 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// Elapsed time: 20 seconds
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g:JCheckBox (JPanel:JComponent, cd:JFrame): TRUE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g:JCheckBox (JPanel:JComponent, cd:JFrame): FALSE
+// [GUI Memory]: 104 MB (+258kb) [00:29:30]
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210274664078A 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// Elapsed time: 509 seconds
+applyEnter(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // ak:ak (Q:ag, cd:JFrame)
+applyEnter(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // ak:ak (Q:ag, cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)

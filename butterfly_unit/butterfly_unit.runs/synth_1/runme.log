@@ -1,0 +1,1011 @@
+
+*** Running vivado
+    with args -log fft_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fft_wrapper.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source fft_wrapper.tcl -notrace
+Command: synth_design -top fft_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8640 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 323.965 ; gain = 113.973
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'fft_wrapper' [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/fft_wrapper.vhd:39]
+INFO: [Synth 8-3491] module 'dist_mem_gen_0' declared at 'Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/.Xil/Vivado-3192-lab229g/realtime/dist_mem_gen_0_stub.vhdl:5' bound to instance 'prom1' of component 'dist_mem_gen_0' [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/fft_wrapper.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/.Xil/Vivado-3192-lab229g/realtime/dist_mem_gen_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'fft_8point_3stage' declared at 'Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/fft_8point_3stage.vhd:34' bound to instance 'FFT' of component 'fft_8point_3stage' [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/fft_wrapper.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'fft_8point_3stage' [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/fft_8point_3stage.vhd:41]
+	Parameter k bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'butterfly_unit' declared at 'Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/butterfly_unit.vhd:35' bound to instance 'BU_stage1_0' of component 'butterfly_unit' [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/fft_8point_3stage.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'butterfly_unit' [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/butterfly_unit.vhd:44]
+	Parameter k bound to: 0 - type: integer 
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+WARNING: [Synth 8-151] case item 1'b1 is unreachable [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Common 17-14] Message 'Synth 8-151' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Synth 8-226] default block is never used [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:4455]
+INFO: [Common 17-14] Message 'Synth 8-226' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'butterfly_unit' (1#1) [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/butterfly_unit.vhd:44]
+	Parameter k bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'butterfly_unit' declared at 'Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/butterfly_unit.vhd:35' bound to instance 'BU_stage1_1' of component 'butterfly_unit' [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/fft_8point_3stage.vhd:71]
+	Parameter k bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'butterfly_unit' declared at 'Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/butterfly_unit.vhd:35' bound to instance 'BU_stage1_2' of component 'butterfly_unit' [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/fft_8point_3stage.vhd:72]
+	Parameter k bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'butterfly_unit' declared at 'Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/butterfly_unit.vhd:35' bound to instance 'BU_stage1_3' of component 'butterfly_unit' [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/fft_8point_3stage.vhd:73]
+	Parameter k bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'butterfly_unit' declared at 'Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/butterfly_unit.vhd:35' bound to instance 'BU_stage2_0' of component 'butterfly_unit' [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/fft_8point_3stage.vhd:75]
+	Parameter k bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'butterfly_unit' declared at 'Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/butterfly_unit.vhd:35' bound to instance 'BU_stage2_1' of component 'butterfly_unit' [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/fft_8point_3stage.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'butterfly_unit__parameterized5' [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/butterfly_unit.vhd:44]
+	Parameter k bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'butterfly_unit__parameterized5' (1#1) [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/butterfly_unit.vhd:44]
+	Parameter k bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'butterfly_unit' declared at 'Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/butterfly_unit.vhd:35' bound to instance 'BU_stage2_2' of component 'butterfly_unit' [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/fft_8point_3stage.vhd:77]
+	Parameter k bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'butterfly_unit' declared at 'Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/butterfly_unit.vhd:35' bound to instance 'BU_stage2_3' of component 'butterfly_unit' [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/fft_8point_3stage.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'butterfly_unit__parameterized8' [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/butterfly_unit.vhd:44]
+	Parameter k bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'butterfly_unit__parameterized8' (1#1) [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/butterfly_unit.vhd:44]
+	Parameter k bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'butterfly_unit' declared at 'Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/butterfly_unit.vhd:35' bound to instance 'BU_stage3_0' of component 'butterfly_unit' [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/fft_8point_3stage.vhd:80]
+	Parameter k bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'butterfly_unit' declared at 'Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/butterfly_unit.vhd:35' bound to instance 'BU_stage3_1' of component 'butterfly_unit' [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/fft_8point_3stage.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'butterfly_unit__parameterized11' [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/butterfly_unit.vhd:44]
+	Parameter k bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'butterfly_unit__parameterized11' (1#1) [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/butterfly_unit.vhd:44]
+	Parameter k bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'butterfly_unit' declared at 'Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/butterfly_unit.vhd:35' bound to instance 'BU_stage3_2' of component 'butterfly_unit' [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/fft_8point_3stage.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'butterfly_unit__parameterized13' [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/butterfly_unit.vhd:44]
+	Parameter k bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'butterfly_unit__parameterized13' (1#1) [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/butterfly_unit.vhd:44]
+	Parameter k bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'butterfly_unit' declared at 'Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/butterfly_unit.vhd:35' bound to instance 'BU_stage3_3' of component 'butterfly_unit' [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/fft_8point_3stage.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'butterfly_unit__parameterized15' [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/butterfly_unit.vhd:44]
+	Parameter k bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'butterfly_unit__parameterized15' (1#1) [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/butterfly_unit.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'fft_8point_3stage' (2#1) [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/fft_8point_3stage.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'fft_wrapper' (3#1) [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/fft_wrapper.vhd:39]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:46 ; elapsed = 00:03:05 . Memory (MB): peak = 1023.258 ; gain = 813.266
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:53 ; elapsed = 00:03:23 . Memory (MB): peak = 1023.258 ; gain = 813.266
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'dist_mem_gen_0' instantiated as 'prom1' [Z:/EE26/butterfly_unit/butterfly_unit.srcs/sources_1/new/fft_wrapper.vhd:62]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/.Xil/Vivado-3192-lab229g/dcp/dist_mem_gen_0_in_context.xdc] for cell 'prom1'
+Finished Parsing XDC File [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/.Xil/Vivado-3192-lab229g/dcp/dist_mem_gen_0_in_context.xdc] for cell 'prom1'
+Parsing XDC File [Z:/EE26/butterfly_unit/butterfly_unit.srcs/constrs_1/new/pinout.xdc]
+Finished Parsing XDC File [Z:/EE26/butterfly_unit/butterfly_unit.srcs/constrs_1/new/pinout.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [Z:/EE26/butterfly_unit/butterfly_unit.srcs/constrs_1/new/pinout.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fft_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fft_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1311.531 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:03:24 ; elapsed = 00:04:27 . Memory (MB): peak = 1311.531 ; gain = 1101.539
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1980]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1980]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1980]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1980]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1980]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1980]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1980]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1980]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1861]
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fract" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1980]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/vhdl_packages/1993/src/float_pkg_c.vhd:1980]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:04:08 ; elapsed = 00:05:13 . Memory (MB): peak = 1311.531 ; gain = 1101.539
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------------------+------------+----------+
+|      |RTL Partition                        |Replication |Instances |
++------+-------------------------------------+------------+----------+
+|1     |butterfly_unit__GBM0                 |           1|     36380|
+|2     |butterfly_unit__GBM1                 |           1|     28787|
+|3     |butterfly_unit__parameterized5__GB0  |           1|     36313|
+|4     |butterfly_unit__parameterized5__GB1  |           1|     28857|
+|5     |butterfly_unit__parameterized8__GB0  |           1|     36313|
+|6     |butterfly_unit__parameterized8__GB1  |           1|     28857|
+|7     |butterfly_unit__parameterized11__GB0 |           1|     39701|
+|8     |butterfly_unit__parameterized11__GB1 |           1|      9269|
+|9     |butterfly_unit__parameterized11__GB2 |           1|      5564|
+|10    |butterfly_unit__parameterized11__GB3 |           1|     11369|
+|11    |butterfly_unit__parameterized13__GB0 |           1|     36313|
+|12    |butterfly_unit__parameterized13__GB1 |           1|     28857|
+|13    |butterfly_unit__parameterized15__GB0 |           1|     28852|
+|14    |butterfly_unit__parameterized15__GB1 |           1|     20139|
+|15    |butterfly_unit__parameterized15__GB2 |           1|      6871|
+|16    |butterfly_unit__parameterized15__GB3 |           1|     11457|
+|17    |fft_wrapper__GC0                     |           1|      1452|
++------+-------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 120   
+	   3 Input     28 Bit       Adders := 96    
+	   2 Input     23 Bit       Adders := 240   
+	   2 Input     10 Bit       Adders := 120   
+	   2 Input      8 Bit       Adders := 240   
+	   2 Input      6 Bit       Adders := 120   
++---XORs : 
+	   2 Input      1 Bit         XORs := 11    
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4354  
+	   2 Input     31 Bit        Muxes := 360   
+	   2 Input     30 Bit        Muxes := 120   
+	   2 Input     29 Bit        Muxes := 120   
+	   2 Input     28 Bit        Muxes := 1272  
+	   2 Input     27 Bit        Muxes := 120   
+	   2 Input     26 Bit        Muxes := 360   
+	   2 Input     25 Bit        Muxes := 120   
+	   2 Input     24 Bit        Muxes := 312   
+	   2 Input     23 Bit        Muxes := 600   
+	   2 Input     22 Bit        Muxes := 120   
+	   2 Input     21 Bit        Muxes := 120   
+	   2 Input     20 Bit        Muxes := 120   
+	   2 Input     19 Bit        Muxes := 120   
+	   2 Input     18 Bit        Muxes := 120   
+	   2 Input     17 Bit        Muxes := 120   
+	   2 Input     16 Bit        Muxes := 120   
+	   2 Input     15 Bit        Muxes := 120   
+	   2 Input     14 Bit        Muxes := 120   
+	   2 Input     13 Bit        Muxes := 120   
+	   2 Input     12 Bit        Muxes := 120   
+	   2 Input     11 Bit        Muxes := 120   
+	   2 Input     10 Bit        Muxes := 120   
+	   3 Input     10 Bit        Muxes := 120   
+	   2 Input      9 Bit        Muxes := 408   
+	   2 Input      8 Bit        Muxes := 360   
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 120   
+	   2 Input      6 Bit        Muxes := 120   
+	   2 Input      1 Bit        Muxes := 4248  
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module fft_wrapper 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module butterfly_unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 10    
+	   3 Input     28 Bit       Adders := 8     
+	   2 Input     23 Bit       Adders := 20    
+	   2 Input     10 Bit       Adders := 10    
+	   2 Input      8 Bit       Adders := 20    
+	   2 Input      6 Bit       Adders := 10    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 362   
+	   2 Input     31 Bit        Muxes := 30    
+	   2 Input     30 Bit        Muxes := 10    
+	   2 Input     29 Bit        Muxes := 10    
+	   2 Input     28 Bit        Muxes := 106   
+	   2 Input     27 Bit        Muxes := 10    
+	   2 Input     26 Bit        Muxes := 30    
+	   2 Input     25 Bit        Muxes := 10    
+	   2 Input     24 Bit        Muxes := 26    
+	   2 Input     23 Bit        Muxes := 50    
+	   2 Input     22 Bit        Muxes := 10    
+	   2 Input     21 Bit        Muxes := 10    
+	   2 Input     20 Bit        Muxes := 10    
+	   2 Input     19 Bit        Muxes := 10    
+	   2 Input     18 Bit        Muxes := 10    
+	   2 Input     17 Bit        Muxes := 10    
+	   2 Input     16 Bit        Muxes := 10    
+	   2 Input     15 Bit        Muxes := 10    
+	   2 Input     14 Bit        Muxes := 10    
+	   2 Input     13 Bit        Muxes := 10    
+	   2 Input     12 Bit        Muxes := 10    
+	   2 Input     11 Bit        Muxes := 10    
+	   2 Input     10 Bit        Muxes := 10    
+	   3 Input     10 Bit        Muxes := 10    
+	   2 Input      9 Bit        Muxes := 34    
+	   2 Input      8 Bit        Muxes := 30    
+	   2 Input      7 Bit        Muxes := 10    
+	   2 Input      6 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 354   
+Module butterfly_unit__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 10    
+	   3 Input     28 Bit       Adders := 8     
+	   2 Input     23 Bit       Adders := 20    
+	   2 Input     10 Bit       Adders := 10    
+	   2 Input      8 Bit       Adders := 20    
+	   2 Input      6 Bit       Adders := 10    
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 363   
+	   2 Input     31 Bit        Muxes := 30    
+	   2 Input     30 Bit        Muxes := 10    
+	   2 Input     29 Bit        Muxes := 10    
+	   2 Input     28 Bit        Muxes := 106   
+	   2 Input     27 Bit        Muxes := 10    
+	   2 Input     26 Bit        Muxes := 30    
+	   2 Input     25 Bit        Muxes := 10    
+	   2 Input     24 Bit        Muxes := 26    
+	   2 Input     23 Bit        Muxes := 50    
+	   2 Input     22 Bit        Muxes := 10    
+	   2 Input     21 Bit        Muxes := 10    
+	   2 Input     20 Bit        Muxes := 10    
+	   2 Input     19 Bit        Muxes := 10    
+	   2 Input     18 Bit        Muxes := 10    
+	   2 Input     17 Bit        Muxes := 10    
+	   2 Input     16 Bit        Muxes := 10    
+	   2 Input     15 Bit        Muxes := 10    
+	   2 Input     14 Bit        Muxes := 10    
+	   2 Input     13 Bit        Muxes := 10    
+	   2 Input     12 Bit        Muxes := 10    
+	   2 Input     11 Bit        Muxes := 10    
+	   2 Input     10 Bit        Muxes := 10    
+	   3 Input     10 Bit        Muxes := 10    
+	   2 Input      9 Bit        Muxes := 34    
+	   2 Input      8 Bit        Muxes := 30    
+	   2 Input      7 Bit        Muxes := 10    
+	   2 Input      6 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 354   
+Module butterfly_unit__parameterized8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 10    
+	   3 Input     28 Bit       Adders := 8     
+	   2 Input     23 Bit       Adders := 20    
+	   2 Input     10 Bit       Adders := 10    
+	   2 Input      8 Bit       Adders := 20    
+	   2 Input      6 Bit       Adders := 10    
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 363   
+	   2 Input     31 Bit        Muxes := 30    
+	   2 Input     30 Bit        Muxes := 10    
+	   2 Input     29 Bit        Muxes := 10    
+	   2 Input     28 Bit        Muxes := 106   
+	   2 Input     27 Bit        Muxes := 10    
+	   2 Input     26 Bit        Muxes := 30    
+	   2 Input     25 Bit        Muxes := 10    
+	   2 Input     24 Bit        Muxes := 26    
+	   2 Input     23 Bit        Muxes := 50    
+	   2 Input     22 Bit        Muxes := 10    
+	   2 Input     21 Bit        Muxes := 10    
+	   2 Input     20 Bit        Muxes := 10    
+	   2 Input     19 Bit        Muxes := 10    
+	   2 Input     18 Bit        Muxes := 10    
+	   2 Input     17 Bit        Muxes := 10    
+	   2 Input     16 Bit        Muxes := 10    
+	   2 Input     15 Bit        Muxes := 10    
+	   2 Input     14 Bit        Muxes := 10    
+	   2 Input     13 Bit        Muxes := 10    
+	   2 Input     12 Bit        Muxes := 10    
+	   2 Input     11 Bit        Muxes := 10    
+	   2 Input     10 Bit        Muxes := 10    
+	   3 Input     10 Bit        Muxes := 10    
+	   2 Input      9 Bit        Muxes := 34    
+	   2 Input      8 Bit        Muxes := 30    
+	   2 Input      7 Bit        Muxes := 10    
+	   2 Input      6 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 354   
+Module butterfly_unit__parameterized11 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 10    
+	   3 Input     28 Bit       Adders := 8     
+	   2 Input     23 Bit       Adders := 20    
+	   2 Input     10 Bit       Adders := 10    
+	   2 Input      8 Bit       Adders := 20    
+	   2 Input      6 Bit       Adders := 10    
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 377   
+	   2 Input     31 Bit        Muxes := 30    
+	   2 Input     30 Bit        Muxes := 10    
+	   2 Input     29 Bit        Muxes := 10    
+	   2 Input     28 Bit        Muxes := 106   
+	   2 Input     27 Bit        Muxes := 10    
+	   2 Input     26 Bit        Muxes := 30    
+	   2 Input     25 Bit        Muxes := 10    
+	   2 Input     24 Bit        Muxes := 26    
+	   2 Input     23 Bit        Muxes := 50    
+	   2 Input     22 Bit        Muxes := 10    
+	   2 Input     21 Bit        Muxes := 10    
+	   2 Input     20 Bit        Muxes := 10    
+	   2 Input     19 Bit        Muxes := 10    
+	   2 Input     18 Bit        Muxes := 10    
+	   2 Input     17 Bit        Muxes := 10    
+	   2 Input     16 Bit        Muxes := 10    
+	   2 Input     15 Bit        Muxes := 10    
+	   2 Input     14 Bit        Muxes := 10    
+	   2 Input     13 Bit        Muxes := 10    
+	   2 Input     12 Bit        Muxes := 10    
+	   2 Input     11 Bit        Muxes := 10    
+	   2 Input     10 Bit        Muxes := 10    
+	   3 Input     10 Bit        Muxes := 10    
+	   2 Input      9 Bit        Muxes := 34    
+	   2 Input      8 Bit        Muxes := 30    
+	   2 Input      7 Bit        Muxes := 10    
+	   2 Input      6 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 354   
+Module butterfly_unit__parameterized13 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 10    
+	   3 Input     28 Bit       Adders := 8     
+	   2 Input     23 Bit       Adders := 20    
+	   2 Input     10 Bit       Adders := 10    
+	   2 Input      8 Bit       Adders := 20    
+	   2 Input      6 Bit       Adders := 10    
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 363   
+	   2 Input     31 Bit        Muxes := 30    
+	   2 Input     30 Bit        Muxes := 10    
+	   2 Input     29 Bit        Muxes := 10    
+	   2 Input     28 Bit        Muxes := 106   
+	   2 Input     27 Bit        Muxes := 10    
+	   2 Input     26 Bit        Muxes := 30    
+	   2 Input     25 Bit        Muxes := 10    
+	   2 Input     24 Bit        Muxes := 26    
+	   2 Input     23 Bit        Muxes := 50    
+	   2 Input     22 Bit        Muxes := 10    
+	   2 Input     21 Bit        Muxes := 10    
+	   2 Input     20 Bit        Muxes := 10    
+	   2 Input     19 Bit        Muxes := 10    
+	   2 Input     18 Bit        Muxes := 10    
+	   2 Input     17 Bit        Muxes := 10    
+	   2 Input     16 Bit        Muxes := 10    
+	   2 Input     15 Bit        Muxes := 10    
+	   2 Input     14 Bit        Muxes := 10    
+	   2 Input     13 Bit        Muxes := 10    
+	   2 Input     12 Bit        Muxes := 10    
+	   2 Input     11 Bit        Muxes := 10    
+	   2 Input     10 Bit        Muxes := 10    
+	   3 Input     10 Bit        Muxes := 10    
+	   2 Input      9 Bit        Muxes := 34    
+	   2 Input      8 Bit        Muxes := 30    
+	   2 Input      7 Bit        Muxes := 10    
+	   2 Input      6 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 354   
+Module butterfly_unit__parameterized15 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 10    
+	   3 Input     28 Bit       Adders := 8     
+	   2 Input     23 Bit       Adders := 20    
+	   2 Input     10 Bit       Adders := 10    
+	   2 Input      8 Bit       Adders := 20    
+	   2 Input      6 Bit       Adders := 10    
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 354   
+	   2 Input     31 Bit        Muxes := 30    
+	   2 Input     30 Bit        Muxes := 10    
+	   2 Input     29 Bit        Muxes := 10    
+	   2 Input     28 Bit        Muxes := 106   
+	   2 Input     27 Bit        Muxes := 10    
+	   2 Input     26 Bit        Muxes := 30    
+	   2 Input     25 Bit        Muxes := 10    
+	   2 Input     24 Bit        Muxes := 26    
+	   2 Input     23 Bit        Muxes := 50    
+	   2 Input     22 Bit        Muxes := 10    
+	   2 Input     21 Bit        Muxes := 10    
+	   2 Input     20 Bit        Muxes := 10    
+	   2 Input     19 Bit        Muxes := 10    
+	   2 Input     18 Bit        Muxes := 10    
+	   2 Input     17 Bit        Muxes := 10    
+	   2 Input     16 Bit        Muxes := 10    
+	   2 Input     15 Bit        Muxes := 10    
+	   2 Input     14 Bit        Muxes := 10    
+	   2 Input     13 Bit        Muxes := 10    
+	   2 Input     12 Bit        Muxes := 10    
+	   2 Input     11 Bit        Muxes := 10    
+	   2 Input     10 Bit        Muxes := 10    
+	   3 Input     10 Bit        Muxes := 10    
+	   2 Input      9 Bit        Muxes := 34    
+	   2 Input      8 Bit        Muxes := 30    
+	   2 Input      7 Bit        Muxes := 10    
+	   2 Input      6 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 354   
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP fract0, operation Mode is: (A:0xb504f7)*B.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: Generating DSP fract0, operation Mode is: (PCIN>>17)+(A:0xb504f7)*B.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: Generating DSP fract0, operation Mode is: (A:0xb504f7)*B.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: Generating DSP fract0, operation Mode is: (PCIN>>17)+(A:0xb504f7)*B.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: Generating DSP fract0, operation Mode is: (A:0xb504f7)*B.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: Generating DSP fract0, operation Mode is: (PCIN>>17)+(A:0xb504f7)*B.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: Generating DSP fract0, operation Mode is: (A:0xb504f7)*B.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: Generating DSP fract0, operation Mode is: (PCIN>>17)+(A:0xb504f7)*B.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+DSP Report: operator fract0 is absorbed into DSP fract0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:22 ; elapsed = 00:06:41 . Memory (MB): peak = 1311.531 ; gain = 1101.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++---------------+---------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping               | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+---------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|butterfly_unit | (A:0xb504f7)*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|butterfly_unit | (PCIN>>17)+(A:0xb504f7)*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|butterfly_unit | (A:0xb504f7)*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|butterfly_unit | (PCIN>>17)+(A:0xb504f7)*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|butterfly_unit | (A:0xb504f7)*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|butterfly_unit | (PCIN>>17)+(A:0xb504f7)*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|butterfly_unit | (A:0xb504f7)*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|butterfly_unit | (PCIN>>17)+(A:0xb504f7)*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++---------------+---------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------------------+------------+----------+
+|      |RTL Partition                        |Replication |Instances |
++------+-------------------------------------+------------+----------+
+|1     |butterfly_unit__GBM0                 |           7|      2385|
+|2     |butterfly_unit__GBM1                 |           7|      2632|
+|3     |butterfly_unit__parameterized5__GB0  |           1|      2595|
+|4     |butterfly_unit__parameterized5__GB1  |           1|      2407|
+|5     |butterfly_unit__parameterized8__GB0  |           1|      2595|
+|6     |butterfly_unit__parameterized8__GB1  |           1|      2407|
+|7     |butterfly_unit__parameterized11__GB0 |           1|      7861|
+|8     |butterfly_unit__parameterized11__GB1 |           1|       156|
+|9     |butterfly_unit__parameterized11__GB2 |           1|         2|
+|10    |butterfly_unit__parameterized11__GB3 |           1|         0|
+|11    |butterfly_unit__parameterized13__GB0 |           1|      2595|
+|12    |butterfly_unit__parameterized13__GB1 |           1|      2407|
+|13    |butterfly_unit__parameterized15__GB0 |           1|      4110|
+|14    |butterfly_unit__parameterized15__GB1 |           1|      2941|
+|15    |butterfly_unit__parameterized15__GB2 |           1|       182|
+|16    |butterfly_unit__parameterized15__GB3 |           1|         0|
+|17    |fft_wrapper__GC0                     |           1|      1181|
++------+-------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:37 ; elapsed = 00:06:56 . Memory (MB): peak = 1330.973 ; gain = 1120.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:05:38 ; elapsed = 00:06:58 . Memory (MB): peak = 1482.098 ; gain = 1272.105
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------------------+------------+----------+
+|      |RTL Partition                        |Replication |Instances |
++------+-------------------------------------+------------+----------+
+|1     |butterfly_unit__GBM0                 |           6|      2350|
+|2     |butterfly_unit__GBM1                 |           6|      2575|
+|3     |butterfly_unit__parameterized5__GB0  |           1|      2581|
+|4     |butterfly_unit__parameterized5__GB1  |           1|      2373|
+|5     |butterfly_unit__parameterized8__GB0  |           1|      2581|
+|6     |butterfly_unit__parameterized8__GB1  |           1|      2373|
+|7     |butterfly_unit__parameterized11__GB0 |           1|      7382|
+|8     |butterfly_unit__parameterized11__GB1 |           1|        97|
+|9     |butterfly_unit__parameterized11__GB2 |           1|         2|
+|10    |butterfly_unit__parameterized13__GB0 |           1|      2595|
+|11    |butterfly_unit__parameterized13__GB1 |           1|      2407|
+|12    |butterfly_unit__parameterized15__GB0 |           1|      4059|
+|13    |butterfly_unit__parameterized15__GB1 |           1|      2857|
+|14    |butterfly_unit__parameterized15__GB2 |           1|       127|
+|15    |fft_wrapper__GC0                     |           1|      1170|
+|16    |butterfly_unit__GBM1__1              |           1|      2632|
+|17    |butterfly_unit__GBM0__1              |           1|      2385|
++------+-------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:49 ; elapsed = 00:07:09 . Memory (MB): peak = 1565.234 ; gain = 1355.242
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:51 ; elapsed = 00:07:11 . Memory (MB): peak = 1565.234 ; gain = 1355.242
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:51 ; elapsed = 00:07:11 . Memory (MB): peak = 1565.234 ; gain = 1355.242
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:52 ; elapsed = 00:07:12 . Memory (MB): peak = 1565.234 ; gain = 1355.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:54 ; elapsed = 00:07:14 . Memory (MB): peak = 1565.234 ; gain = 1355.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:55 ; elapsed = 00:07:15 . Memory (MB): peak = 1565.234 ; gain = 1355.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:55 ; elapsed = 00:07:15 . Memory (MB): peak = 1565.234 ; gain = 1355.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |dist_mem_gen_0 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+--------------------+------+
+|      |Cell                |Count |
++------+--------------------+------+
+|1     |dist_mem_gen_0_bbox |     1|
+|2     |BUFG                |     1|
+|3     |CARRY4              |  1189|
+|4     |DSP48E1             |     8|
+|5     |LUT1                |  1596|
+|6     |LUT2                |  3804|
+|7     |LUT3                |  2295|
+|8     |LUT4                |  5131|
+|9     |LUT5                |  4201|
+|10    |LUT6                | 10027|
+|11    |MUXF7               |    61|
+|12    |MUXF8               |     6|
+|13    |XORCY               |   920|
+|14    |FDRE                |    35|
+|15    |IBUF                |     9|
+|16    |OBUF                |    16|
++------+--------------------+------+
+
+Report Instance Areas: 
++------+----------------+--------------------------------+------+
+|      |Instance        |Module                          |Cells |
++------+----------------+--------------------------------+------+
+|1     |top             |                                | 29811|
+|2     |  FFT           |fft_8point_3stage               |  4434|
+|3     |    BU_stage3_1 |butterfly_unit__parameterized11 |  2839|
+|4     |    BU_stage3_3 |butterfly_unit__parameterized15 |  1595|
++------+----------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:55 ; elapsed = 00:07:15 . Memory (MB): peak = 1565.234 ; gain = 1355.242
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:38 ; elapsed = 00:06:24 . Memory (MB): peak = 1565.234 ; gain = 1026.781
+Synthesis Optimization Complete : Time (s): cpu = 00:05:55 ; elapsed = 00:07:16 . Memory (MB): peak = 1565.234 ; gain = 1355.242
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2126 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'fft_wrapper' is not ideal for floorplanning, since the cellview 'fft_wrapper' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 920 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 920 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+282 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:06:00 ; elapsed = 00:07:17 . Memory (MB): peak = 1565.234 ; gain = 1319.398
+INFO: [Common 17-1381] The checkpoint 'Z:/EE26/butterfly_unit/butterfly_unit.runs/synth_1/fft_wrapper.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1565.234 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.189 . Memory (MB): peak = 1565.234 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 06 17:47:31 2018...

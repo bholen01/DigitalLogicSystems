@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../butterfly_unit.srcs/sources_1/new/complex.vhd"
+vhdl xil_defaultlib  "../../../butterfly_unit.srcs/sources_1/new/D_Latch_8by8_complex.vhd"
+vhdl xil_defaultlib  "../../../butterfly_unit.srcs/sources_1/new/butterfly_unit.vhd"
+vhdl xil_defaultlib  "../../../butterfly_unit.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../butterfly_unit.srcs/sources_1/new/fft_8point_3stage.vhd"
+vhdl xil_defaultlib  "../../../butterfly_unit.srcs/sources_1/new/fft_wrapper.vhd"
+vhdl xil_defaultlib  "../../../butterfly_unit.srcs/sim_1/new/fft_8point_3stage_test.vhd"
+
+# Do not sort compile order
+nosort

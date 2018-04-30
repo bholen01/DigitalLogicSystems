@@ -1,0 +1,11 @@
+0.6
+2016.4
+Jan 23 2017
+19:37:30
+Z:/EE26/butterfly_unit_pipelined/butterfly_unit.srcs/sim_1/new/fft_8point_3stage_test.vhd,1524515817,vhdl,,,,fft_8point_3stage_test,,,,,,,,
+Z:/EE26/butterfly_unit_pipelined/butterfly_unit.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_sim_netlist.vhdl,1524515873,vhdl,,,,dist_mem_gen_0;dist_mem_gen_0_dist_mem_gen_v8_0_11;dist_mem_gen_0_dist_mem_gen_v8_0_11_synth;dist_mem_gen_0_rom,,,,,,,,
+Z:/EE26/butterfly_unit_pipelined/butterfly_unit.srcs/sources_1/new/D_Latch_8by8_complex.vhd,1523388796,vhdl,,,,d_latch_8by8_complex,,,,,,,,
+Z:/EE26/butterfly_unit_pipelined/butterfly_unit.srcs/sources_1/new/butterfly_unit.vhd,1522179972,vhdl,,,,butterfly_unit,,,,,,,,
+Z:/EE26/butterfly_unit_pipelined/butterfly_unit.srcs/sources_1/new/complex.vhd,1522180921,vhdl,Z:/EE26/butterfly_unit_pipelined/butterfly_unit.srcs/sim_1/new/fft_8point_3stage_test.vhd;Z:/EE26/butterfly_unit_pipelined/butterfly_unit.srcs/sources_1/new/D_Latch_8by8_complex.vhd;Z:/EE26/butterfly_unit_pipelined/butterfly_unit.srcs/sources_1/new/butterfly_unit.vhd;Z:/EE26/butterfly_unit_pipelined/butterfly_unit.srcs/sources_1/new/fft_8point_3stage.vhd;Z:/EE26/butterfly_unit_pipelined/butterfly_unit.srcs/sources_1/new/fft_wrapper.vhd,,,complex,,,,,,,,
+Z:/EE26/butterfly_unit_pipelined/butterfly_unit.srcs/sources_1/new/fft_8point_3stage.vhd,1523392238,vhdl,,,,fft_8point_3stage,,,,,,,,
+Z:/EE26/butterfly_unit_pipelined/butterfly_unit.srcs/sources_1/new/fft_wrapper.vhd,1523390939,vhdl,,,,fft_wrapper,,,,,,,,

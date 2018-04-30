@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../floatin_point_multiplier.srcs/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0_sim_netlist.vhdl" \
+"../../../../../project_1_v2/project_1_v2.srcs/sources_1/new/adder.vhd" \
+"../../../../floatin_point_multiplier.srcs/sources_1/new/array_multiplier.vhd" \
+"../../../../floatin_point_multiplier.srcs/sources_1/new/floating_point_multiplier.vhd" \
+"../../../../floatin_point_multiplier.srcs/sources_1/new/hardware_interface.vhd" \
+"../../../../floatin_point_multiplier.srcs/sources_1/new/summation_unit.vhd" \
+"../../../../floatin_point_multiplier.srcs/sim_1/new/interface_test.vhd" \
+
+# Do not sort compile order
+nosort

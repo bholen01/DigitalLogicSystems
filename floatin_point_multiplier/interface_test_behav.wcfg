@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="interface_test_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="interface_test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="23548666fs"></ZoomStartTime>
+      <ZoomEndTime time="23630667fs"></ZoomEndTime>
+      <Cursor1Time time="23606000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="146"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="/interface_test/switches" type="array">
+      <obj_property name="ElementShortName">switches[7:0]</obj_property>
+      <obj_property name="ObjectShortName">switches[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/interface_test/fastclk" type="logic">
+      <obj_property name="ElementShortName">fastclk</obj_property>
+      <obj_property name="ObjectShortName">fastclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/interface_test/decode" type="array">
+      <obj_property name="ElementShortName">decode[7:0]</obj_property>
+      <obj_property name="ObjectShortName">decode[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/interface_test/anode" type="array">
+      <obj_property name="ElementShortName">anode[7:0]</obj_property>
+      <obj_property name="ObjectShortName">anode[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/interface_test/hi/X" type="array">
+      <obj_property name="ElementShortName">X[31:0]</obj_property>
+      <obj_property name="ObjectShortName">X[31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>

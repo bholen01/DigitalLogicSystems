@@ -1,0 +1,12 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+Z:/EE26/floatin_point_multiplier/floatin_point_multiplier.srcs/sim_1/new/floating_test.vhd,1520201156,vhdl,,,,floating_test,,,,,,,,
+Z:/EE26/floatin_point_multiplier/floatin_point_multiplier.srcs/sim_1/new/interface_test.vhd,1520292227,vhdl,,,,interface_test,,,,,,,,
+Z:/EE26/floatin_point_multiplier/floatin_point_multiplier.srcs/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0_sim_netlist.vhdl,1520293707,vhdl,,,,dist_mem_gen_0;dist_mem_gen_0_dist_mem_gen_v8_0_12;dist_mem_gen_0_dist_mem_gen_v8_0_12_synth;dist_mem_gen_0_rom,,,,,,,,
+Z:/EE26/floatin_point_multiplier/floatin_point_multiplier.srcs/sources_1/new/array_multiplier.vhd,1520194916,vhdl,,,,array_multiplier,,,,,,,,
+Z:/EE26/floatin_point_multiplier/floatin_point_multiplier.srcs/sources_1/new/floating_point_multiplier.vhd,1520204258,vhdl,,,,floating_point_multiplier,,,,,,,,
+Z:/EE26/floatin_point_multiplier/floatin_point_multiplier.srcs/sources_1/new/hardware_interface.vhd,1520293532,vhdl,,,,hardware_interface,,,,,,,,
+Z:/EE26/floatin_point_multiplier/floatin_point_multiplier.srcs/sources_1/new/summation_unit.vhd,1519685332,vhdl,,,,summation_unit,,,,,,,,
+Z:/EE26/project_1_v2/project_1_v2.srcs/sources_1/new/adder.vhd,1517947775,vhdl,,,,full_adder,,,,,,,,
